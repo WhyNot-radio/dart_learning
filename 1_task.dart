@@ -1,6 +1,7 @@
 void main(){
   task1();
   task2();
+  task3();
 }
 void task1(){
 double l = 18.6;
@@ -12,7 +13,17 @@ print('Цілочисельна площа прямокутника: ${P~/1}');
 }
 void task2(){
   int number = 55;
-  if (number<50) {print('number менше 50!');}
-  else if(number<100) {print('number менше 100!');}
-  else{print('number менше 50, але більше 100');};
+  if (number<50) print('number менше 50!');
+  else if(number<100) print('number менше 100!');
+  else print('number менше 50, але більше 100');
+}
+void task3(){
+bool isHaveMoney = true;
+bool isStoreOpen = true;
+
+bool canBuyGrocery = (isStoreOpen && isHaveMoney);
+if (canBuyGrocery == true)
+print("Можна іти за покупками! Гроші є та магазин відкрити.");
+else if(isStoreOpen==true) print("Треба чекати, магазин відкритий, але в тебе нема грошей!");
+else print('Гроші є, але магазин закритий.');
 }
