@@ -2,6 +2,7 @@ void main(){
   task1();
   task2();
   task3();
+  task4();
 }
 void task1(){
 double l = 18.6;
@@ -26,4 +27,14 @@ if (canBuyGrocery == true)
 print("Можна іти за покупками! Гроші є та магазин відкрити.");
 else if(isStoreOpen==true) print("Треба чекати, магазин відкритий, але в тебе нема грошей!");
 else print('Гроші є, але магазин закритий.');
+}
+void task4(){
+  double temperature = 25.3;
+  String temp;
+  if (temperature>25){temp = "Тепло";}
+  else temp = "Холодно";
+  print("На вулиці температура $temperature, і на вулці $temp");
+  String coldTemp = temperature < 10 ? 'дуже холодно': temperature < 25? 'холодно': 'Тепло';
+  print('На вулиці $coldTemp!!!');
+
 }
