@@ -13,10 +13,12 @@ print('Площа прямокутника: $P');
 print('Цілочисельна площа прямокутника: ${P~/1}');
 }
 void task2(){
-  int number = 55;
+  int number = 54;
+  print("Чи number кратне 5: ${number%5 == 0}");
   if (number<50) print('number менше 50!');
   else if(number<100) print('number менше 100!');
   else print('number менше 50, але більше 100');
+
 }
 void task3(){
 bool isHaveMoney = true;
