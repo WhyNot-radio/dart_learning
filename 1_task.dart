@@ -49,5 +49,6 @@ void task5(){
   score+=correctAnswer*10;
   score-=mistakes*5;
   score*=2;
+  score~/=totalQuestion;
   print('Фінальний результат: $score');
 }
