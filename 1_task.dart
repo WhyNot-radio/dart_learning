@@ -5,6 +5,7 @@ void main(){
   task4();
   task5();
   task6();
+  task7();
 }
 void task1(){
 double l = 18.6;
@@ -60,4 +61,27 @@ else if(examScore>90) print('Відмінно!!!');
 else if(75<examScore&&examScore<90) print('Добре!!!');
 else if(60<examScore&&examScore<74) print('Задовільно!!!');
 else print('Екзамен провалено!!!');
+}
+void task7(){
+int dayNumber = 5;
+if (dayNumber>7||dayNumber<1) print('Невірний номер дня!');
+else {
+  switch (dayNumber){
+  case (1):
+   print('Понеділок');
+   case(2):
+   print('Вівторок');
+   case(3):
+   print('Середа');
+   case(4):
+   print('Четвер');
+   case(5):
+   print('Пятниця');
+   case(6):
+   print('Субота');
+   case(7):
+   print('Неділя');
+};
+};
+
 }
