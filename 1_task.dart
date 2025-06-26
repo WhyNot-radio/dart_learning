@@ -3,6 +3,7 @@ void main(){
   task2();
   task3();
   task4();
+  task5();
 }
 void task1(){
 double l = 18.6;
@@ -39,4 +40,14 @@ void task4(){
   String coldTemp = temperature < 10 ? 'дуже холодно': temperature < 25? 'холодно': 'Тепло';
   print('На вулиці $coldTemp!!!');
 
+}
+void task5(){
+  int score = 0;
+  int correctAnswer = 17;
+  int mistakes = 3;
+  int totalQuestion = 20;
+  score+=correctAnswer*10;
+  score-=mistakes*5;
+  score*=2;
+  print('Фінальний результат: $score');
 }
