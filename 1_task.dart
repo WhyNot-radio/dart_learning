@@ -6,6 +6,7 @@ void main(){
   task5();
   task6();
   task7();
+  task8();
 }
 void task1(){
 double l = 18.6;
@@ -85,3 +86,17 @@ else {
 };
 
 }
+void task8(){
+  int num = 10;
+  int sum = 0;
+  for(int i=1; i<=num; i++)
+  {
+   sum+=i;
+   print(i);
+  }
+  print(sum);
+for (int i = 1; i<= num; i++){
+  if(i%2==0){
+    print('Парне число:$i');
+  } 
+}}
