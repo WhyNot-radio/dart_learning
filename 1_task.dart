@@ -4,6 +4,7 @@ void main(){
   task3();
   task4();
   task5();
+  task6();
 }
 void task1(){
 double l = 18.6;
@@ -51,4 +52,12 @@ void task5(){
   score*=2;
   score~/=totalQuestion;
   print('Фінальний результат: $score');
+}
+void task6(){
+int examScore = 56;
+if(examScore<20)print('На перездачу');
+else if(examScore>90) print('Відмінно!!!');
+else if(75<examScore&&examScore<90) print('Добре!!!');
+else if(60<examScore&&examScore<74) print('Задовільно!!!');
+else print('Екзамен провалено!!!');
 }
